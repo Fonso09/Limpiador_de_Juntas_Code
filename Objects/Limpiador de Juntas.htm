@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\Limpiador de Juntas.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\Limpiador de Juntas.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6140002: Last Updated: Sun Nov 17 01:28:09 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6140002: Last Updated: Sun Nov 17 02:22:24 2024
 <BR><P>
 <H3>Maximum Stack Usage =        168 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -149,7 +149,7 @@ Function Pointers
  <LI><a href="#[2f]">USART1_IRQHandler</a> from startup_stm32f767xx.o(.text) referenced from startup_stm32f767xx.o(RESET)
  <LI><a href="#[30]">USART2_IRQHandler</a> from startup_stm32f767xx.o(.text) referenced from startup_stm32f767xx.o(RESET)
  <LI><a href="#[31]">USART3_IRQHandler</a> from code_limpiador_juntas.o(.text.USART3_IRQHandler) referenced from startup_stm32f767xx.o(RESET)
- <LI><a href="#[51]">USART6_IRQHandler</a> from startup_stm32f767xx.o(.text) referenced from startup_stm32f767xx.o(RESET)
+ <LI><a href="#[51]">USART6_IRQHandler</a> from code_limpiador_juntas.o(.text.USART6_IRQHandler) referenced from startup_stm32f767xx.o(RESET)
  <LI><a href="#[5]">UsageFault_Handler</a> from startup_stm32f767xx.o(.text) referenced from startup_stm32f767xx.o(RESET)
  <LI><a href="#[a]">WWDG_IRQHandler</a> from startup_stm32f767xx.o(.text) referenced from startup_stm32f767xx.o(RESET)
  <LI><a href="#[7a]">_GLOBAL__sub_I_Code_Limpiador_Juntas.cpp</a> from code_limpiador_juntas.o(.text._GLOBAL__sub_I_Code_Limpiador_Juntas.cpp) referenced from code_limpiador_juntas.o(.init_array)
@@ -175,11 +175,11 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
 </UL>
 
-<P><STRONG><a name="[b7]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[b8]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
-<P><STRONG><a name="[b8]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[b9]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
-<P><STRONG><a name="[b9]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+<P><STRONG><a name="[ba]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
 
 <P><STRONG><a name="[8a]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
@@ -196,15 +196,15 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
 </UL>
 
-<P><STRONG><a name="[ba]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
+<P><STRONG><a name="[bb]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
 
-<P><STRONG><a name="[bb]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+<P><STRONG><a name="[bc]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
 
-<P><STRONG><a name="[bc]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+<P><STRONG><a name="[bd]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
 
-<P><STRONG><a name="[bd]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+<P><STRONG><a name="[be]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
 
-<P><STRONG><a name="[be]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+<P><STRONG><a name="[bf]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
 
 <P><STRONG><a name="[84]"></a>__rt_lib_init_cpp_2</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000031))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
@@ -213,35 +213,35 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cpp_initialize__aeabi_
 </UL>
 
-<P><STRONG><a name="[bf]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
+<P><STRONG><a name="[c0]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
 
-<P><STRONG><a name="[c0]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+<P><STRONG><a name="[c1]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
 
-<P><STRONG><a name="[c1]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
+<P><STRONG><a name="[c2]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
 
-<P><STRONG><a name="[c2]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+<P><STRONG><a name="[c3]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
 
-<P><STRONG><a name="[c3]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+<P><STRONG><a name="[c4]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
 
-<P><STRONG><a name="[c4]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+<P><STRONG><a name="[c5]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
 
-<P><STRONG><a name="[c5]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+<P><STRONG><a name="[c6]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
 
-<P><STRONG><a name="[c6]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+<P><STRONG><a name="[c7]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
 
-<P><STRONG><a name="[c7]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+<P><STRONG><a name="[c8]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
 
-<P><STRONG><a name="[c8]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
+<P><STRONG><a name="[c9]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
 
-<P><STRONG><a name="[c9]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+<P><STRONG><a name="[ca]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
 
-<P><STRONG><a name="[ca]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
+<P><STRONG><a name="[cb]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
 
-<P><STRONG><a name="[cb]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
+<P><STRONG><a name="[cc]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
 
-<P><STRONG><a name="[cc]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
+<P><STRONG><a name="[cd]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
 
-<P><STRONG><a name="[cd]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
+<P><STRONG><a name="[ce]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
 
 <P><STRONG><a name="[8f]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
@@ -255,26 +255,26 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_finalize
 </UL>
 
-<P><STRONG><a name="[ce]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
+<P><STRONG><a name="[cf]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
 
-<P><STRONG><a name="[cf]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000007))
+<P><STRONG><a name="[d0]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000007))
 
-<P><STRONG><a name="[d0]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+<P><STRONG><a name="[d1]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
 
-<P><STRONG><a name="[d1]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000010))
+<P><STRONG><a name="[d2]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000010))
 
-<P><STRONG><a name="[d2]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A))
+<P><STRONG><a name="[d3]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A))
 
-<P><STRONG><a name="[d3]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
+<P><STRONG><a name="[d4]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
 
-<P><STRONG><a name="[d4]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
+<P><STRONG><a name="[d5]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
 
 <P><STRONG><a name="[7e]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
 </UL>
 
-<P><STRONG><a name="[d5]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+<P><STRONG><a name="[d6]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
 
 <P><STRONG><a name="[87]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry4.o(.ARM.Collect$$rtentry$$00000004))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
@@ -287,7 +287,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
 </UL>
 
-<P><STRONG><a name="[d6]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+<P><STRONG><a name="[d7]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[8b]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
@@ -297,7 +297,7 @@ Global Symbols
 <LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 </UL>
 
-<P><STRONG><a name="[d7]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+<P><STRONG><a name="[d8]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
 
 <P><STRONG><a name="[a3]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
@@ -307,7 +307,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
 </UL>
 
-<P><STRONG><a name="[d8]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+<P><STRONG><a name="[d9]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
 
 <P><STRONG><a name="[90]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
@@ -695,9 +695,6 @@ Global Symbols
 <P><STRONG><a name="[30]"></a>USART2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f767xx.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f767xx.o(RESET)
 </UL>
-<P><STRONG><a name="[51]"></a>USART6_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f767xx.o(.text))
-<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f767xx.o(RESET)
-</UL>
 <P><STRONG><a name="[a]"></a>WWDG_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f767xx.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f767xx.o(RESET)
 </UL>
@@ -725,11 +722,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_GLOBAL__sub_I_Code_Limpiador_Juntas.cpp
 </UL>
 
-<P><STRONG><a name="[d9]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[da]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
-<P><STRONG><a name="[da]"></a>__rt_heap_escrow</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[db]"></a>__rt_heap_escrow</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
-<P><STRONG><a name="[db]"></a>__rt_heap_expand</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[dc]"></a>__rt_heap_expand</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
 <P><STRONG><a name="[7c]"></a>__cpp_initialize__aeabi_</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, init_aeabi.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __cpp_initialize__aeabi_
@@ -781,11 +778,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
 </UL>
 
-<P><STRONG><a name="[dc]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+<P><STRONG><a name="[dd]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[dd]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+<P><STRONG><a name="[de]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[de]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
+<P><STRONG><a name="[df]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
 
 <P><STRONG><a name="[97]"></a>__rt_heap_descriptor</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_heap_descriptor_intlibspace.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
@@ -798,13 +795,13 @@ Global Symbols
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_atexit
 </UL>
 
-<P><STRONG><a name="[df]"></a>__use_no_heap</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hguard.o(.text), UNUSED)
+<P><STRONG><a name="[e0]"></a>__use_no_heap</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hguard.o(.text), UNUSED)
 
-<P><STRONG><a name="[e0]"></a>__heap$guard</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hguard.o(.text), UNUSED)
+<P><STRONG><a name="[e1]"></a>__heap$guard</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hguard.o(.text), UNUSED)
 
-<P><STRONG><a name="[e1]"></a>_terminate_user_alloc</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init_alloc.o(.text), UNUSED)
+<P><STRONG><a name="[e2]"></a>_terminate_user_alloc</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init_alloc.o(.text), UNUSED)
 
-<P><STRONG><a name="[e2]"></a>_init_user_alloc</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init_alloc.o(.text), UNUSED)
+<P><STRONG><a name="[e3]"></a>_init_user_alloc</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init_alloc.o(.text), UNUSED)
 
 <P><STRONG><a name="[98]"></a>__Heap_Full</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, init_alloc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
@@ -833,7 +830,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
 </UL>
 
-<P><STRONG><a name="[e3]"></a>__Heap_DescSize</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, h1_init.o(.text), UNUSED)
+<P><STRONG><a name="[e4]"></a>__Heap_DescSize</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, h1_init.o(.text), UNUSED)
 
 <P><STRONG><a name="[86]"></a>__cxa_finalize</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, cxa_finalize.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __cxa_finalize &rArr; free
@@ -859,13 +856,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGABRT
 </UL>
 
-<P><STRONG><a name="[e4]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+<P><STRONG><a name="[e5]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
 <P><STRONG><a name="[a2]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[e5]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+<P><STRONG><a name="[e6]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
 <P><STRONG><a name="[88]"></a>__user_setup_stackheap</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
@@ -886,7 +883,7 @@ Global Symbols
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Full
 </UL>
 
-<P><STRONG><a name="[e6]"></a>_maybe_terminate_alloc</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, maybetermalloc1.o(.text), UNUSED)
+<P><STRONG><a name="[e7]"></a>_maybe_terminate_alloc</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, maybetermalloc1.o(.text), UNUSED)
 
 <P><STRONG><a name="[8d]"></a>exit</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, exit.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
@@ -946,22 +943,35 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f767xx.o(RESET)
 </UL>
-<P><STRONG><a name="[b4]"></a>GPIO_SETUP()</STRONG> (Thumb, 124 bytes, Stack size 8 bytes, code_limpiador_juntas.o(.text._Z10GPIO_SETUPv))
+<P><STRONG><a name="[51]"></a>USART6_IRQHandler</STRONG> (Thumb, 160 bytes, Stack size 40 bytes, code_limpiador_juntas.o(.text.USART6_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
+<LI>Call Chain = USART6_IRQHandler &rArr; std::__1::unordered_map&lang;char, int, std::__1::hash&lang;char&rang;, std::__1::equal_to&lang;char&rang;, std::__1::allocator&lang;std::__1::pair&lang;const char, int&rang;&rang;&rang;::operator [](const char&) &rArr; std::__1::__hash_table&lang;std::__1::__hash_value_type&lang;char, int&rang;, std::__1::__unordered_map_hasher&lang;char, std::__1::__hash_value_type&lang;char, int&rang;, std::__1::hash&lang;char&rang;, (bool)1&rang;, std::__1::__unordered_map_equal&lang;char, std::__1::__hash_value_type&lang;char, int&rang;, std::__1::equal_to&lang;char&rang;, (bool)1&rang;, std::__1::allocator&lang;std::__1::__hash_value_type&lang;char, int&rang;&rang;&rang;::rehash(unsigned) &rArr; std::__1::__hash_table&lang;std::__1::__hash_value_type&lang;char, int&rang;, std::__1::__unordered_map_hasher&lang;char, std::__1::__hash_value_type&lang;char, int&rang;, std::__1::hash&lang;char&rang;, (bool)1&rang;, std::__1::__unordered_map_equal&lang;char, std::__1::__hash_value_type&lang;char, int&rang;, std::__1::equal_to&lang;char&rang;, (bool)1&rang;, std::__1::allocator&lang;std::__1::__hash_value_type&lang;char, int&rang;&rang;&rang;::__rehash(unsigned) &rArr; operator new(unsigned) &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__1::unordered_map&lang;char, int, std::__1::hash&lang;char&rang;, std::__1::equal_to&lang;char&rang;, std::__1::allocator&lang;std::__1::pair&lang;const char, int&rang;&rang;&rang;::operator [](const char&)
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;carro_adelante(int)
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;carro_atras(int)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f767xx.o(RESET)
+</UL>
+<P><STRONG><a name="[b5]"></a>GPIO_SETUP()</STRONG> (Thumb, 148 bytes, Stack size 8 bytes, code_limpiador_juntas.o(.text._Z10GPIO_SETUPv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GPIO_SETUP()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b6]"></a>TIM_Config()</STRONG> (Thumb, 76 bytes, Stack size 0 bytes, code_limpiador_juntas.o(.text._Z10TIM_Configv))
+<P><STRONG><a name="[b7]"></a>TIM_Config()</STRONG> (Thumb, 76 bytes, Stack size 0 bytes, code_limpiador_juntas.o(.text._Z10TIM_Configv))
 <BR><BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b5]"></a>USART_SETUP()</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, code_limpiador_juntas.o(.text._Z11USART_SETUPv))
-<BR><BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<P><STRONG><a name="[b6]"></a>USART_SETUP()</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, code_limpiador_juntas.o(.text._Z11USART_SETUPv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = USART_SETUP()
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[a8]"></a>carro_atras(int)</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, code_limpiador_juntas.o(.text._Z11carro_atrasi))
 <BR><BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART6_IRQHandler
 <LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART3_IRQHandler
 </UL>
 
@@ -971,6 +981,7 @@ Global Symbols
 
 <P><STRONG><a name="[a7]"></a>carro_adelante(int)</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, code_limpiador_juntas.o(.text._Z14carro_adelantei))
 <BR><BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART6_IRQHandler
 <LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART3_IRQHandler
 </UL>
 
@@ -988,6 +999,10 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Wait1ms(unsigned)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b4]"></a>RCC_SETUP()</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, code_limpiador_juntas.o(.text._Z9RCC_SETUPv))
+<BR><BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[ac]"></a>std::__1::__hash_table&lang;std::__1::__hash_value_type&lang;char, int&rang;, std::__1::__unordered_map_hasher&lang;char, std::__1::__hash_value_type&lang;char, int&rang;, std::__1::hash&lang;char&rang;, (bool)1&rang;, std::__1::__unordered_map_equal&lang;char, std::__1::__hash_value_type&lang;char, int&rang;, std::__1::equal_to&lang;char&rang;, (bool)1&rang;, std::__1::allocator&lang;std::__1::__hash_value_type&lang;char, int&rang;&rang;&rang;::__deallocate_node(std::__1::__hash_node_base&lang;std::__1::__hash_node&lang;std::__1::__hash_value_type&lang;char, int&rang;, void*&rang;*&rang;*)</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, code_limpiador_juntas.o(.text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE17__deallocate_nodeEPNS_16__hash_node_baseIPNS_11__hash_nodeIS2_PvEEEE))
@@ -1061,7 +1076,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new(unsigned)
 <LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__1::__hash_table&lang;std::__1::__hash_value_type&lang;char, int&rang;, std::__1::__unordered_map_hasher&lang;char, std::__1::__hash_value_type&lang;char, int&rang;, std::__1::hash&lang;char&rang;, (bool)1&rang;, std::__1::__unordered_map_equal&lang;char, std::__1::__hash_value_type&lang;char, int&rang;, std::__1::equal_to&lang;char&rang;, (bool)1&rang;, std::__1::allocator&lang;std::__1::__hash_value_type&lang;char, int&rang;&rang;&rang;::rehash(unsigned)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART3_IRQHandler
+<BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART6_IRQHandler
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART3_IRQHandler
 </UL>
 
 <P><STRONG><a name="[b3]"></a>std::get_new_handler()</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, cxa_handlers.cpp.o(.text._ZSt15get_new_handlerv))
@@ -1089,15 +1105,16 @@ Global Symbols
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__1::__hash_table&lang;std::__1::__hash_value_type&lang;char, int&rang;, std::__1::__unordered_map_hasher&lang;char, std::__1::__hash_value_type&lang;char, int&rang;, std::__1::hash&lang;char&rang;, (bool)1&rang;, std::__1::__unordered_map_equal&lang;char, std::__1::__hash_value_type&lang;char, int&rang;, std::__1::equal_to&lang;char&rang;, (bool)1&rang;, std::__1::allocator&lang;std::__1::__hash_value_type&lang;char, int&rang;&rang;&rang;::__rehash(unsigned)
 </UL>
 
-<P><STRONG><a name="[8c]"></a>main</STRONG> (Thumb, 216 bytes, Stack size 8 bytes, code_limpiador_juntas.o(.text.main))
+<P><STRONG><a name="[8c]"></a>main</STRONG> (Thumb, 192 bytes, Stack size 8 bytes, code_limpiador_juntas.o(.text.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = main &rArr; paro_emergencia() &rArr; SysTick_Wait1ms(unsigned)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;paro_emergencia()
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_SETUP()
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;paro_emergencia()
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;carro_adelante(int)
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;carro_atras(int)
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SETUP()
-<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Config()
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SETUP()
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SETUP()
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Config()
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SETUP()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
@@ -1106,9 +1123,9 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init_fp_1
 </UL>
 
-<P><STRONG><a name="[e7]"></a>__fplib_config_fpu_vfp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
+<P><STRONG><a name="[e8]"></a>__fplib_config_fpu_vfp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
 
-<P><STRONG><a name="[e8]"></a>__fplib_config_pureend_doubles</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
+<P><STRONG><a name="[e9]"></a>__fplib_config_pureend_doubles</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
 <P>
 <H3>
 Local Symbols

@@ -14,11 +14,14 @@ void carro_atras(int potencia);
 void paro_emergencia();
 void Test_Serial();
 void Test_Timer();
+void USART6_SendChar(int value);
 int in_adelante=0;
 int in_atras=0;
 int in_E_stop=0;
 int i_rx = 0;
+int i_rx2 = 0;
 char buffer[256];
+char buffer2[256];
 unordered_map<char, int> potePWM;
 
 
@@ -63,6 +66,7 @@ int main(){
 void RCC_SETUP(){
 	RCC-> AHB1ENR |= 0xFF; //Activa los puertos de la A a la F
     RCC->APB1ENR |= (1<<18)|(1<<3); //habilita el USART3 y Habilita TIM5
+    RCC->APB2ENR |= (1<<5);
 
 }
 void GPIO_SETUP(){
@@ -84,11 +88,18 @@ void GPIO_SETUP(){
     GPIOA->MODER |=(2<<0)|(2<<2)|(2<<4)|(2<<6); //Modo alternante para el TIM5|PWM, PA0, PA1, PA2, PA3
     GPIOA->AFR[0] |= 0x2222; //AF2 para el TIM5 de PA0, PA1, PA2 y PA3
 
+    GPIOC->MODER |= (2<<12)|(2<<14); //USART6 PC6(TX) y PC7(RX)
+    GPIOC->AFR[0] |= (0x88<<24); //USART6
+
 }
 void USART_SETUP(){
     USART3->BRR |= 0x683; //BAUD RATE 9600
     USART3->CR1 |= ((0x2D) | (0<<15)); //no hay oversampling del baud rate, se activa USART EN, Reciever y Transmiter EN, RX INTERRUPT EN
     NVIC_EnableIRQ(USART3_IRQn); //nombre en tabla del NVIC, interrupcion
+
+    USART6->BRR |= 0x683;
+    USART6->CR1 |=((0x2D) | (0<<15));
+    NVIC_EnableIRQ(USART6_IRQn);
 }
 void TIM_Config(){
     TIM5->PSC = 16-1;  // Para tener 50Hz
@@ -126,6 +137,11 @@ int USART3_SendChar(int value){
    while(!(USART3->ISR & USART_ISR_TXE));
    return 0;
 }
+void USART6_SendChar(int value){
+    USART6->TDR = value; //Se escribe lo que se va a enviar
+    while(!(USART6->ISR & USART_ISR_TXE)); //A la posici?n 7
+    //No sale de la funci?n hasta que indica que envi? el dato
+}
 void Test_Serial(){
 	SysTick_Wait1ms(1500);	//pobjeto prueba para saber si la comunicacion serial esta sirviendo
 	USART3_SendChar('P');    
@@ -159,6 +175,7 @@ extern "C"{
         GPIOB->ODR^=(1<<0);   
     }
 
+    
     void USART3_IRQHandler(void){
         while(USART3->ISR & USART_ISR_RXNE){
             // lo que quiere que se haga cuando se reciba un dato por partde de la comunicación serial
@@ -189,6 +206,42 @@ extern "C"{
                     if(i_rx < 255){
                         buffer[i_rx] = rx;
                         i_rx++;
+                    }
+                }
+
+        }
+            
+    }
+    void USART6_IRQHandler(void){
+        while(USART6->ISR & USART_ISR_RXNE){
+            // lo que quiere que se haga cuando se reciba un dato por partde de la comunicación serial
+            char rx = (char)(USART6->RDR & 0xFF);
+            if(rx=='n'){
+                buffer2[i_rx2]= '\0';
+                i_rx2=0;
+                char mov = buffer2[2];
+                char vel = buffer2[3];
+                switch(mov){
+                case 'A':
+                    carro_adelante(potePWM[vel]);
+                    break; 
+                case 'B':
+                    carro_atras(potePWM[vel]);
+                    break;
+                case 'U':
+                    //funcion servos up
+                    break;
+                case 'D':
+                    //funcion servos down
+                    break;
+                default:
+                    GPIOE->ODR &= ~0xFFFF;
+                    GPIOB->ODR &= ~0xFFFF;
+                }
+            } else{
+                    if(i_rx < 255){
+                        buffer2[i_rx2] = rx;
+                        i_rx2++;
                     }
                 }
 
