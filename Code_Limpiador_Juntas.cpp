@@ -219,8 +219,8 @@ extern "C"{
             if(rx=='n'){
                 buffer2[i_rx2]= '\0';
                 i_rx2=0;
-                char mov = buffer2[2];
-                char vel = buffer2[3];
+                char mov = buffer2[0];
+                char vel = buffer2[1];
                 switch(mov){
                 case 'A':
                     carro_adelante(potePWM[vel]);
