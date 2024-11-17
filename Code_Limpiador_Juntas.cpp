@@ -17,9 +17,9 @@ void Test_Timer();
 int in_adelante=0;
 int in_atras=0;
 int in_E_stop=0;
+int i_rx = 0;
+char buffer[256];
 unordered_map<char, int> potePWM;
-
-
 
 
 int main(){
@@ -29,9 +29,9 @@ int main(){
     SysTick_Init();	
     USART_SETUP();
     TIM_Config();
-    potePWM['A'] = 5000;
+    potePWM['L'] = 5000;
     potePWM['M'] = 12000;
-    potePWM['B'] = 20000;
+    potePWM['H'] = 20000;
 
     while(1){
         //Test_Serial();
@@ -88,7 +88,7 @@ void GPIO_SETUP(){
 void USART_SETUP(){
     USART3->BRR |= 0x683; //BAUD RATE 9600
     USART3->CR1 |= ((0x2D) | (0<<15)); //no hay oversampling del baud rate, se activa USART EN, Reciever y Transmiter EN, RX INTERRUPT EN
-    NVIC_EnableIRQ(USART3_IRQn); //nombre en tabla del NVIC, interrupción
+    NVIC_EnableIRQ(USART3_IRQn); //nombre en tabla del NVIC, interrupcion
 }
 void TIM_Config(){
     TIM5->PSC = 16-1;  // Para tener 50Hz
@@ -163,18 +163,36 @@ extern "C"{
         while(USART3->ISR & USART_ISR_RXNE){
             // lo que quiere que se haga cuando se reciba un dato por partde de la comunicación serial
             char rx = (char)(USART3->RDR & 0xFF);
-            switch(rx){
+            if(rx=='n'){
+                buffer[i_rx]= '\0';
+                i_rx=0;
+                char mov = buffer[0];
+                char vel = buffer[1];
+                switch(mov){
                 case 'A':
-                    carro_adelante(potePWM[rx]);
+                    carro_adelante(potePWM[vel]);
                     break; 
                 case 'B':
-                    carro_atras(potePWM[rx]);
+                    carro_atras(potePWM[vel]);
+                    break;
+                case 'U':
+                    //funcion servos up
+                    break;
+                case 'D':
+                    //funcion servos down
                     break;
                 default:
                     GPIOE->ODR &= ~0xFFFF;
                     GPIOB->ODR &= ~0xFFFF;
+                }
+            } else{
+                    if(i_rx < 255){
+                        buffer[i_rx] = rx;
+                        i_rx++;
+                    }
+                }
 
-            }
         }
+            
     }
 }
