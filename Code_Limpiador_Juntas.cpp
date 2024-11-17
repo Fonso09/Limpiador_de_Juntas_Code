@@ -1,4 +1,6 @@
 #include <stm32f7xx.h>
+#include <unordered_map>
+using namespace std;
 void SysTick_Init(void);                   //funciones para los delays
 void SysTick_Wait(uint32_t n);
 void SysTick_Wait1ms(uint32_t delay);
@@ -7,14 +9,18 @@ void GPIO_SETUP();
 void USART_SETUP();
 int USART3_SendChar(int value);
 void TIM_Config();
-void carro_adelante();
-void carro_atras();
+void carro_adelante(int potencia);
+void carro_atras(int potencia);
 void paro_emergencia();
 void Test_Serial();
+void Test_Timer();
 int in_adelante=0;
 int in_atras=0;
 int in_E_stop=0;
-int potencia=0;
+unordered_map<char, int> potePWM;
+
+
+
 
 int main(){
     //Inicializar funciones y los setups 
@@ -23,19 +29,21 @@ int main(){
     SysTick_Init();	
     USART_SETUP();
     TIM_Config();
+    potePWM['A'] = 5000;
+    potePWM['M'] = 12000;
+    potePWM['B'] = 20000;
+
     while(1){
-        Test_Serial();
-        TIM5->CCR1=5000; //PA0
-		TIM5->CCR2=1000; //PA1
-		TIM5->CCR3=1500; //PA2
-		TIM5->CCR4=2000; //PA3
+        //Test_Serial();
+        //Test_Timer();
+
         
         //Entradas 
         in_adelante= (GPIOF->IDR)& (1<<13);
         in_atras= (GPIOF->IDR)& (1<<14);
         in_E_stop= (GPIOC->IDR)& (1<<13);
-        GPIOB->ODR &= ~0xFFFF;
-        GPIOE->ODR &= ~0xFFFF;
+        //GPIOB->ODR &= ~0xFFFF;
+        //GPIOE->ODR &= ~0xFFFF;
 
         //Seleccionar funcion del carro, de manera manual con botones fisicos:
         if(in_E_stop==(1<<13))
@@ -43,10 +51,10 @@ int main(){
             paro_emergencia();
         } else{
             if((in_atras==(1<<14))&&(in_adelante!=(1<<13))){
-                carro_adelante();
+                carro_adelante(1000);
             }
             if((in_atras!=(1<<14))&&(in_adelante==(1<<13))){
-                carro_atras();
+                carro_atras(1000);
             }
         }
     }
@@ -94,15 +102,19 @@ void TIM_Config(){
 	NVIC_EnableIRQ(TIM5_IRQn); //Por si queremos la interrupci?n que igual trabaja con el ARR
         
 }
-void carro_adelante(){
+void carro_adelante(int potencia){
     GPIOB->ODR &= ~0xFFFF;
+    GPIOE->ODR &= ~0xFFFF;
     GPIOE->ODR |= (1<<7)|(1<<8)|(0<<9)|(0<<10);
     GPIOB->ODR |= (1<<7)|(0<<14);
+    TIM5->CCR1=potencia; //PA0
 }
-void carro_atras(){
+void carro_atras(int potencia){
+    GPIOE->ODR &= ~0xFFFF;
     GPIOB->ODR &= ~0xFFFF;
     GPIOE->ODR |= (0<<7)|(0<<8)|(1<<9)|(1<<10);
     GPIOB->ODR |= (0<<7)|(1<<14);
+    TIM5->CCR1=potencia; //PA0
 }
 void paro_emergencia(){
     GPIOE->ODR &= ~0xFFFF;
@@ -117,6 +129,12 @@ int USART3_SendChar(int value){
 void Test_Serial(){
 	SysTick_Wait1ms(1500);	//pobjeto prueba para saber si la comunicacion serial esta sirviendo
 	USART3_SendChar('P');    
+}
+void Test_Timer(){
+    TIM5->CCR1=5000; //PA0
+	TIM5->CCR2=1000; //PA1
+	TIM5->CCR3=1500; //PA2
+	TIM5->CCR4=2000; //PA3
 }
 
 // funciones de los delays
@@ -147,13 +165,14 @@ extern "C"{
             char rx = (char)(USART3->RDR & 0xFF);
             switch(rx){
                 case 'A':
-                    carro_adelante();
-                    break;
+                    carro_adelante(potePWM[rx]);
+                    break; 
                 case 'B':
-                    carro_atras();
+                    carro_atras(potePWM[rx]);
                     break;
-                //default:
-                    //GPIOE->ODR &= ~0xFFFF;
+                default:
+                    GPIOE->ODR &= ~0xFFFF;
+                    GPIOB->ODR &= ~0xFFFF;
 
             }
         }

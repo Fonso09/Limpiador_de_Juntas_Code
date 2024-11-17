@@ -101,10 +101,10 @@
         <yPos>-1</yPos>
       </MaxPosition>
       <NormalPosition>
-        <Top>211</Top>
-        <Left>-79</Left>
-        <Right>1457</Right>
-        <Bottom>763</Bottom>
+        <Top>194</Top>
+        <Left>-240</Left>
+        <Right>1296</Right>
+        <Bottom>746</Bottom>
       </NormalPosition>
     </WindowPosition>
     <MDIClientArea>
@@ -3606,9 +3606,9 @@
       <ActiveTab>0</ActiveTab>
       <Doc>
         <Name>.\Code_Limpiador_Juntas.cpp</Name>
-        <ColumnNumber>19</ColumnNumber>
-        <TopLine>60</TopLine>
-        <CurrentLine>87</CurrentLine>
+        <ColumnNumber>0</ColumnNumber>
+        <TopLine>20</TopLine>
+        <CurrentLine>21</CurrentLine>
         <Folding>0</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>

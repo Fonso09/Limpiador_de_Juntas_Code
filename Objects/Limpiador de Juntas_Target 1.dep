@@ -1,6 +1,6 @@
 Dependencies for Project 'Limpiador de Juntas', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 6140000::V6.14::ARMCLANG
-F (.\Code_Limpiador_Juntas.cpp)(0x67397760)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-D__EVAL -gdwarf-3 -Oz -ffunction-sections -w-I./RTE/_Target_1-IC:/Users/Usuario/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include-IC:/Users/Usuario/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F767xx -D_RTE_-o ./objects/code_limpiador_juntas.o -MD)
+F (.\Code_Limpiador_Juntas.cpp)(0x673984A6)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-D__EVAL -gdwarf-3 -Oz -ffunction-sections -w-I./RTE/_Target_1-IC:/Users/Usuario/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include-IC:/Users/Usuario/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F767xx -D_RTE_-o ./objects/code_limpiador_juntas.o -MD)
 I (C:\Users\Usuario\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h)(0x65C0CF1F)
 I (C:\Users\Usuario\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f767xx.h)(0x65C0CF1F)
 I (C:\Users\Usuario\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\core_cm7.h)(0x65C0CB50)
@@ -14,6 +14,45 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0D79E8)
 I (C:\Users\Usuario\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\m-profile\armv7m_mpu.h)(0x65C0CB50)
 I (C:\Users\Usuario\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\m-profile\armv7m_cachel1.h)(0x65C0CB50)
 I (C:\Users\Usuario\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\system_stm32f7xx.h)(0x65C0CF1F)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\unordered_map)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__hash_table)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\initializer_list)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\cstddef)(0x5E0C6986)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\version)(0x5E33EDA2)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5DE0B442)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__nullptr)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\memory)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\type_traits)(0x5E297D9C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\typeinfo)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\exception)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\cstdlib)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdlib.h)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x5DE0B43A)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\math.h)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x5DE0B43C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\limits)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__undef_macros)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\cstdint)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\new)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\utility)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__tuple)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\cstring)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\string.h)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5DE0B43C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__debug)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\iosfwd)(0x5E0C6986)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\wchar.h)(0x5E0C6986)
+I (C:\Keil_v5\ARM\ARMCLANG\include\wchar.h)(0x5DE0B43A)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\iterator)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__functional_base)(0x5E0C6986)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\tuple)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdexcept)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\algorithm)(0x5E0C6986)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\functional)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\bit)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\cmath)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__node_handle)(0x5E0C6988)
+I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\optional)(0x5E0C6988)
 F (RTE\Device\STM32F767ZITx\startup_stm32f767xx.s)(0x65C0CF1F)(--target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -masm=auto -c-gdwarf-3 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/_Target_1-IC:/Users/Usuario/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include-IC:/Users/Usuario/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 530" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32F767xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_stm32f767xx.o)
 F (RTE\Device\STM32F767ZITx\system_stm32f7xx.c)(0x65C0CF1F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -w-I./RTE/_Target_1-IC:/Users/Usuario/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include-IC:/Users/Usuario/AppData/Local/Arm/Packs/Keil/STM32F7xx_DFP/2.16.0/Drivers/CMSIS/Device/ST/STM32F7xx/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F767xx -D_RTE_-o ./objects/system_stm32f7xx.o -MD)
 I (C:\Users\Usuario\AppData\Local\Arm\Packs\Keil\STM32F7xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f7xx.h)(0x65C0CF1F)
