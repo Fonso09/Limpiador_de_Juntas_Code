@@ -4,6 +4,8 @@ void SysTick_Wait(uint32_t n);
 void SysTick_Wait1ms(uint32_t delay);
 void RCC_SETUP();
 void GPIO_SETUP();
+void USART_SETUP();
+int USART3_SendChar(int value);
 void carro_adelante();
 void carro_atras();
 void paro_emergencia();
@@ -16,10 +18,17 @@ int main(){
 	RCC_SETUP();
     GPIO_SETUP();
     SysTick_Init();	
+    USART_SETUP();
 
    
 
     while(1){
+    SysTick_Wait1ms(1500);	
+		USART3_SendChar('C');	
+		SysTick_Wait1ms(1500);	
+		USART3_SendChar('T');
+		SysTick_Wait1ms(1500);	
+		USART3_SendChar('P');
         //Entradas 
         in_adelante= (GPIOF->IDR)& (1<<13);
         in_atras= (GPIOF->IDR)& (1<<14);
@@ -49,6 +58,7 @@ int main(){
 
 void RCC_SETUP(){
 	RCC-> AHB1ENR |= 0xFF; //Activa los puertos de la A a la F
+    RCC->APB1ENR |= (1<<18); //habilita el USART3
 
 }
 void GPIO_SETUP(){
@@ -61,16 +71,38 @@ void GPIO_SETUP(){
     GPIOF->MODER |= (0<<26)|(0<<28); //PF13 y PF14 como entradas para el avanzado y retroceso manual
     GPIOF->PUPDR |= (2<<26)|(2<<28); //PF13 y PF14 pull down
 
-}   
+    GPIOD->MODER |= 0xA0000;
+    GPIOD->AFR[1] |= 0x77;
+
+}
+void USART_SETUP(){
+    USART3->BRR |= 0x683; //BAUD RATE 9600
+    USART3->CR1 |= ((0x2D) | (0<<15)); //Pal oversampling que va al baud rate
+    //USART EN, Reciever y Transmiter EN, RX INTERRUPT EN
+    NVIC_EnableIRQ(USART3_IRQn); //nombre en tabla del NVIC
+}
 void carro_adelante(){
+    GPIOB->ODR &= ~0xFFFF;
     GPIOE->ODR |= (1<<7)|(1<<8)|(0<<9)|(0<<10);
+    GPIOB->ODR |= (1<<7)|(0<<14);
 }
 void carro_atras(){
+    GPIOB->ODR &= ~0xFFFF;
     GPIOE->ODR |= (0<<7)|(0<<8)|(1<<9)|(1<<10);
+    GPIOB->ODR |= (0<<7)|(1<<14);
 }
 void paro_emergencia(){
     GPIOE->ODR &= ~0xFFFF;
-    SysTick_Wait1ms(5000);
+    GPIOB->ODR &= ~0xFFFF;
+    SysTick_Wait1ms(10000);
+}
+int USART3_SendChar(int value){
+    USART3->TDR = value;
+	 
+	 
+	 
+   while(!(USART3->ISR & USART_ISR_TXE));
+   return 0;
 }
 
 // funciones de los delays
@@ -86,5 +118,24 @@ void SysTick_Wait(uint32_t n) {
 void SysTick_Wait1ms(uint32_t delay) {
     for (uint32_t i = 0; i < delay; i++) {
         SysTick_Wait(16000);
+    }
+}
+extern "C"{
+    void USART3_IRQHandler(void){
+        while(USART3->ISR & USART_ISR_RXNE){
+            // lo que quiere que se haga 
+            char rx = (char)(USART3->RDR & 0xFF);
+            switch(rx){
+                case 'A':
+                    carro_adelante();
+                    break;
+                case 'B':
+                    carro_atras();
+                    break;
+                //default:
+                    //GPIOE->ODR &= ~0xFFFF;
+
+            }
+        }
     }
 }
