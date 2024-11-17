@@ -23,12 +23,9 @@ int main(){
    
 
     while(1){
-    SysTick_Wait1ms(1500);	
-		USART3_SendChar('C');	
-		SysTick_Wait1ms(1500);	
-		USART3_SendChar('T');
-		SysTick_Wait1ms(1500);	
+		SysTick_Wait1ms(1500);	//pobjeto prueba para saber si la comunicacion serial esta sirviendo
 		USART3_SendChar('P');
+        
         //Entradas 
         in_adelante= (GPIOF->IDR)& (1<<13);
         in_atras= (GPIOF->IDR)& (1<<14);
@@ -36,7 +33,7 @@ int main(){
         GPIOB->ODR &= ~0xFFFF;
         GPIOE->ODR &= ~0xFFFF;
 
-        //Seleccionar funcion del carro:
+        //Seleccionar funcion del carro, de manera manual con botones físicos:
         if(in_E_stop==(1<<13))
         {
             paro_emergencia();
@@ -71,15 +68,14 @@ void GPIO_SETUP(){
     GPIOF->MODER |= (0<<26)|(0<<28); //PF13 y PF14 como entradas para el avanzado y retroceso manual
     GPIOF->PUPDR |= (2<<26)|(2<<28); //PF13 y PF14 pull down
 
-    GPIOD->MODER |= 0xA0000;
-    GPIOD->AFR[1] |= 0x77;
+    GPIOD->MODER |= 0xA0000;  //Pines a usar por el USART3 PD8(TX) y PD9(RX)
+    GPIOD->AFR[1] |= 0x77; // Viendo el Datasheet se puede observar que el PD8 7 PD9 para USART3 se debe activar el AF7 y estan en la parte high del AFR
 
 }
 void USART_SETUP(){
     USART3->BRR |= 0x683; //BAUD RATE 9600
-    USART3->CR1 |= ((0x2D) | (0<<15)); //Pal oversampling que va al baud rate
-    //USART EN, Reciever y Transmiter EN, RX INTERRUPT EN
-    NVIC_EnableIRQ(USART3_IRQn); //nombre en tabla del NVIC
+    USART3->CR1 |= ((0x2D) | (0<<15)); //no hay oversampling del baud rate, se activa USART EN, Reciever y Transmiter EN, RX INTERRUPT EN
+    NVIC_EnableIRQ(USART3_IRQn); //nombre en tabla del NVIC, interrupción
 }
 void carro_adelante(){
     GPIOB->ODR &= ~0xFFFF;
@@ -98,9 +94,6 @@ void paro_emergencia(){
 }
 int USART3_SendChar(int value){
     USART3->TDR = value;
-	 
-	 
-	 
    while(!(USART3->ISR & USART_ISR_TXE));
    return 0;
 }
@@ -120,10 +113,11 @@ void SysTick_Wait1ms(uint32_t delay) {
         SysTick_Wait(16000);
     }
 }
+//interrupciones
 extern "C"{
     void USART3_IRQHandler(void){
         while(USART3->ISR & USART_ISR_RXNE){
-            // lo que quiere que se haga 
+            // lo que quiere que se haga cuando se reciba un dato por partde de la comunicación serial
             char rx = (char)(USART3->RDR & 0xFF);
             switch(rx){
                 case 'A':
