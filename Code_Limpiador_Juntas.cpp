@@ -15,6 +15,8 @@ void paro_emergencia();
 void Test_Serial();
 void Test_Timer();
 void USART6_SendChar(int value);
+void move_servo(int vaule1, int value2);
+void move_controlled_servos(char condition);
 int in_adelante=0;
 int in_atras=0;
 int in_E_stop=0;
@@ -23,7 +25,8 @@ int i_rx2 = 0;
 char buffer[256];
 char buffer2[256];
 unordered_map<char, int> potePWM;
-
+int contador_servo1=1500;
+int contador_servo2=2500;
 
 int main(){
     //Inicializar funciones y los setups 
@@ -32,12 +35,13 @@ int main(){
     SysTick_Init();	
     USART_SETUP();
     TIM_Config();
+    move_servo(1500,2500);
     potePWM['L'] = 5000;
     potePWM['M'] = 12000;
     potePWM['H'] = 20000;
 
     while(1){
-        //Test_Serial();
+        Test_Serial();
         //Test_Timer();
 
         
@@ -65,8 +69,8 @@ int main(){
 
 void RCC_SETUP(){
 	RCC-> AHB1ENR |= 0xFF; //Activa los puertos de la A a la F
-    RCC->APB1ENR |= (1<<18)|(1<<3); //habilita el USART3 y Habilita TIM5
-    RCC->APB2ENR |= (1<<5);
+    RCC->APB1ENR |= (1<<18)|(1<<3)|(1<<2); //habilita el USART3, Habilita TIM5 y Habilita TIM4
+    RCC->APB2ENR |= (1<<5); //Habilita el USART6
 
 }
 void GPIO_SETUP(){
@@ -91,14 +95,18 @@ void GPIO_SETUP(){
     GPIOC->MODER |= (2<<12)|(2<<14); //USART6 PC6(TX) y PC7(RX)
     GPIOC->AFR[0] |= (0x88<<24); //USART6
 
+    GPIOB->MODER |= (2<<16)|(2<<18); // PB8 para TIM4CH3 y PB9 para TIM4CH4
+    GPIOB->AFR[1] |= 0x22; //AF2 del TIM4 para PB8 y PB9
+
+
 }
 void USART_SETUP(){
     USART3->BRR |= 0x683; //BAUD RATE 9600
     USART3->CR1 |= ((0x2D) | (0<<15)); //no hay oversampling del baud rate, se activa USART EN, Reciever y Transmiter EN, RX INTERRUPT EN
     NVIC_EnableIRQ(USART3_IRQn); //nombre en tabla del NVIC, interrupcion
 
-    USART6->BRR |= 0x683;
-    USART6->CR1 |=((0x2D) | (0<<15));
+    USART6->BRR |= 0x683; //BAUD RATE 9600
+    USART6->CR1 |=((0x2D) | (0<<15)); //no hay oversampling del baud rate, se activa USART EN, Reciever y Transmiter EN, RX INTERRUPT EN
     NVIC_EnableIRQ(USART6_IRQn);
 }
 void TIM_Config(){
@@ -111,7 +119,13 @@ void TIM_Config(){
 	TIM5->CCER|=(1<<0) | (1<<4)|(1<<8) | (1<<12);  //Habilitar salida de comparacion y captura
     TIM5->CR1|=0X1; //Habilitar conteo
 	NVIC_EnableIRQ(TIM5_IRQn); //Por si queremos la interrupci?n que igual trabaja con el ARR
-        
+
+    TIM4->PSC = 16-1;
+    TIM4->ARR = 20000-1; //lo mismo que TIM5 para que tenga el mismo rango 
+    TIM4->CCMR2 |= 0x6060; //Modo PWM TIM4 CH3 y CH4 como salida 00 en CC1S
+    TIM4->CCER |= (1<<0) | (1<<4)|(1<<8) | (1<<12); //Habilita salida comparacion y captura
+    TIM4->CR1 |= 0X1; //Habilita Conteo
+
 }
 void carro_adelante(int potencia){
     GPIOB->ODR &= ~0xFFFF;
@@ -130,6 +144,7 @@ void carro_atras(int potencia){
 void paro_emergencia(){
     GPIOE->ODR &= ~0xFFFF;
     GPIOB->ODR &= ~0xFFFF;
+    move_servo(1500,2500);
     SysTick_Wait1ms(10000);
 }
 int USART3_SendChar(int value){
@@ -152,6 +167,53 @@ void Test_Timer(){
 	TIM5->CCR3=1500; //PA2
 	TIM5->CCR4=2000; //PA3
 }
+void move_servo(int value1, int value2){
+    //servo conectado a PA3:
+    TIM5->CCR4=value1; //PA3
+    //Servo conectado a PB9:
+    TIM4->CCR4=value2; //PB9
+}
+void move_controlled_servos(char condition){
+    switch(condition){
+        case 'U':
+            if(contador_servo1<=1500 || contador_servo2>=2500){
+                contador_servo1= 1500;
+                contador_servo2 = 2500;
+
+                //servo conectado a PA3:
+                TIM5->CCR4=contador_servo1; //PA3
+                //Servo conectado a PB9:
+                TIM4->CCR4=contador_servo2; //PB9
+            } else{
+                contador_servo1= contador_servo1-100;
+                contador_servo2= contador_servo2+100;
+                TIM5->CCR4=contador_servo1; //PA3
+                //Servo conectado a PB9:
+                TIM4->CCR4=contador_servo2; //PB9
+
+            }
+            break;
+        case 'D':
+            if(contador_servo1>=2400 || contador_servo2<=1600){
+                contador_servo1= 2400;
+                contador_servo2 = 1600;
+
+                //servo conectado a PA3:
+                TIM5->CCR4=contador_servo1; //PA3
+                //Servo conectado a PB9:
+                TIM4->CCR4=contador_servo2; //PB9
+            } else{
+                contador_servo1= contador_servo1+100;
+                contador_servo2= contador_servo2-100;
+                TIM5->CCR4=contador_servo1; //PA3
+                //Servo conectado a PB9:
+                TIM4->CCR4=contador_servo2; //PB9
+
+            }
+            break;
+
+    }
+}
 
 // funciones de los delays
 void SysTick_Init(void) {
@@ -172,18 +234,17 @@ void SysTick_Wait1ms(uint32_t delay) {
 extern "C"{
     void TIM5_IRQHandler(void){
         TIM5->SR &=~(1UL<<0);
-        GPIOB->ODR^=(1<<0);   
+        //GPIOB->ODR^=(1<<0);   
     }
 
-    
     void USART3_IRQHandler(void){
         while(USART3->ISR & USART_ISR_RXNE){
             // lo que quiere que se haga cuando se reciba un dato por partde de la comunicación serial
             char rx = (char)(USART3->RDR & 0xFF);
-            if(rx=='n'){
-                buffer[i_rx]= '\0';
+            if(rx=='n'){  //n cuando reciba n es el final del mensaje
+                buffer[i_rx]= '\0'; //caracter para denominar el final del string
                 i_rx=0;
-                char mov = buffer[0];
+                char mov = buffer[0]; // como siempre tiene el mismo size y se sobreescriben estos indices se puede tomar el dato del index
                 char vel = buffer[1];
                 switch(mov){
                 case 'A':
@@ -193,14 +254,17 @@ extern "C"{
                     carro_atras(potePWM[vel]);
                     break;
                 case 'U':
-                    //funcion servos up
+                    //move_servo(1500,2500);
+                    move_controlled_servos('U');
                     break;
                 case 'D':
-                    //funcion servos down
+                    //move_servo(2400,1600);
+                    move_controlled_servos('D');
                     break;
                 default:
                     GPIOE->ODR &= ~0xFFFF;
                     GPIOB->ODR &= ~0xFFFF;
+                    move_servo(1500,2500);
                 }
             } else{
                     if(i_rx < 255){
@@ -229,14 +293,17 @@ extern "C"{
                     carro_atras(potePWM[vel]);
                     break;
                 case 'U':
-                    //funcion servos up
+                    //move_servo(1500,2500);
+                    move_controlled_servos('U');
                     break;
                 case 'D':
-                    //funcion servos down
+                    //move_servo(2400,1600);
+                    move_controlled_servos('D');
                     break;
                 default:
                     GPIOE->ODR &= ~0xFFFF;
                     GPIOB->ODR &= ~0xFFFF;
+                    move_servo(1500,2500);
                 }
             } else{
                     if(i_rx < 255){
