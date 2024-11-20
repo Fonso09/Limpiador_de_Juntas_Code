@@ -133,6 +133,7 @@ void carro_adelante(int potencia){
     GPIOE->ODR |= (1<<7)|(1<<8)|(0<<9)|(0<<10);
     GPIOB->ODR |= (1<<7)|(0<<14);
     TIM5->CCR1=potencia; //PA0
+    TIM4->CCR3=potencia; //PB8
 }
 void carro_atras(int potencia){
     GPIOE->ODR &= ~0xFFFF;
@@ -140,6 +141,7 @@ void carro_atras(int potencia){
     GPIOE->ODR |= (0<<7)|(0<<8)|(1<<9)|(1<<10);
     GPIOB->ODR |= (0<<7)|(1<<14);
     TIM5->CCR1=potencia; //PA0
+    TIM4->CCR3=potencia; //PB8
 }
 void paro_emergencia(){
     GPIOE->ODR &= ~0xFFFF;

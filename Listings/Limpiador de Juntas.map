@@ -742,44 +742,44 @@ Image Symbol Table
     __arm_cp.5_1                             0x08000994   Number         4  code_limpiador_juntas.o(.text._Z11USART_SETUPv)
     __arm_cp.5_2                             0x08000998   Number         4  code_limpiador_juntas.o(.text._Z11USART_SETUPv)
     [Anonymous Symbol]                       0x0800099c   Section        0  code_limpiador_juntas.o(.text._Z11carro_atrasi)
-    [Anonymous Symbol]                       0x080009d0   Section        0  code_limpiador_juntas.o(.text._Z12SysTick_Waitj)
-    __arm_cp.18_0                            0x080009e4   Number         4  code_limpiador_juntas.o(.text._Z12SysTick_Waitj)
-    [Anonymous Symbol]                       0x080009e8   Section        0  code_limpiador_juntas.o(.text._Z14carro_adelantei)
-    __arm_cp.11_1                            0x08000a1c   Number         4  code_limpiador_juntas.o(.text._Z14carro_adelantei)
-    [Anonymous Symbol]                       0x08000a20   Section        0  code_limpiador_juntas.o(.text._Z15SysTick_Wait1msj)
-    [Anonymous Symbol]                       0x08000a34   Section        0  code_limpiador_juntas.o(.text._Z15USART3_SendChari)
-    __arm_cp.14_0                            0x08000a44   Number         4  code_limpiador_juntas.o(.text._Z15USART3_SendChari)
-    [Anonymous Symbol]                       0x08000a48   Section        0  code_limpiador_juntas.o(.text._Z15paro_emergenciav)
-    __arm_cp.10_0                            0x08000a78   Number         4  code_limpiador_juntas.o(.text._Z15paro_emergenciav)
-    [Anonymous Symbol]                       0x08000a7c   Section        0  code_limpiador_juntas.o(.text._Z22move_controlled_servosc)
-    __arm_cp.17_0                            0x08000ae8   Number         4  code_limpiador_juntas.o(.text._Z22move_controlled_servosc)
-    __arm_cp.17_1                            0x08000aec   Number         4  code_limpiador_juntas.o(.text._Z22move_controlled_servosc)
-    [Anonymous Symbol]                       0x08000af0   Section        0  code_limpiador_juntas.o(.text._Z9RCC_SETUPv)
-    __arm_cp.2_0                             0x08000b0c   Number         4  code_limpiador_juntas.o(.text._Z9RCC_SETUPv)
-    __arm_cp.2_1                             0x08000b10   Number         4  code_limpiador_juntas.o(.text._Z9RCC_SETUPv)
-    [Anonymous Symbol]                       0x08000b14   Section        0  code_limpiador_juntas.o(.text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE17__deallocate_nodeEPNS_16__hash_node_baseIPNS_11__hash_nodeIS2_PvEEEE)
-    [Anonymous Symbol]                       0x08000b26   Section        0  code_limpiador_juntas.o(.text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE6rehashEj)
-    [Anonymous Symbol]                       0x08000bc4   Section        0  code_limpiador_juntas.o(.text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE8__rehashEj)
-    [Anonymous Symbol]                       0x08000cd0   Section        0  code_limpiador_juntas.o(.text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEED2Ev)
-    [Anonymous Symbol]                       0x08000cec   Section        0  hash.cpp.o(.text._ZNSt3__112__next_primeEj)
-    [Anonymous Symbol]                       0x08001236   Section        0  code_limpiador_juntas.o(.text._ZNSt3__113unordered_mapIciNS_4hashIcEENS_8equal_toIcEENS_9allocatorINS_4pairIKciEEEEED2Ev)
-    [Anonymous Symbol]                       0x0800123a   Section        0  code_limpiador_juntas.o(.text._ZNSt3__113unordered_mapIciNS_4hashIcEENS_8equal_toIcEENS_9allocatorINS_4pairIKciEEEEEixEOc)
-    [Anonymous Symbol]                       0x080013a0   Section        0  code_limpiador_juntas.o(.text._ZNSt3__113unordered_mapIciNS_4hashIcEENS_8equal_toIcEENS_9allocatorINS_4pairIKciEEEEEixERS7_)
-    [Anonymous Symbol]                       0x08001506   Section        0  cxa_handlers.cpp.o(.text._ZSt15get_new_handlerv)
-    [Anonymous Symbol]                       0x08001512   Section        0  new.cpp.o(.text._ZdlPv)
-    [Anonymous Symbol]                       0x08001518   Section        0  new.cpp.o(.text._Znwj)
-    [Anonymous Symbol]                       0x08001540   Section        0  code_limpiador_juntas.o(.text.main)
-    __arm_cp.1_0                             0x08001600   Number         4  code_limpiador_juntas.o(.text.main)
-    __arm_cp.1_1                             0x08001604   Number         4  code_limpiador_juntas.o(.text.main)
-    __arm_cp.1_2                             0x08001608   Number         4  code_limpiador_juntas.o(.text.main)
-    __arm_cp.1_3                             0x0800160c   Number         4  code_limpiador_juntas.o(.text.main)
-    __arm_cp.1_4                             0x08001610   Number         4  code_limpiador_juntas.o(.text.main)
-    __arm_cp.1_5                             0x08001614   Number         4  code_limpiador_juntas.o(.text.main)
-    $v0                                      0x08001618   Number         0  fpinit.o(x$fpl$fpinit)
-    x$fpl$fpinit                             0x08001618   Section       26  fpinit.o(x$fpl$fpinit)
-    std::__1::<unnamed namespace 1>::small_primes 0x08001634   Data         192  hash.cpp.o(.rodata._ZNSt3__112_GLOBAL__N_112small_primesE)
-    std::__1::<unnamed namespace 1>::indices 0x080016f4   Data         192  hash.cpp.o(.rodata._ZNSt3__112_GLOBAL__N_17indicesE)
-    .init_array                              0x080017d8   Section        0  init_aeabi.o(.init_array)
+    [Anonymous Symbol]                       0x080009d4   Section        0  code_limpiador_juntas.o(.text._Z12SysTick_Waitj)
+    __arm_cp.18_0                            0x080009e8   Number         4  code_limpiador_juntas.o(.text._Z12SysTick_Waitj)
+    [Anonymous Symbol]                       0x080009ec   Section        0  code_limpiador_juntas.o(.text._Z14carro_adelantei)
+    __arm_cp.11_1                            0x08000a24   Number         4  code_limpiador_juntas.o(.text._Z14carro_adelantei)
+    [Anonymous Symbol]                       0x08000a28   Section        0  code_limpiador_juntas.o(.text._Z15SysTick_Wait1msj)
+    [Anonymous Symbol]                       0x08000a3c   Section        0  code_limpiador_juntas.o(.text._Z15USART3_SendChari)
+    __arm_cp.14_0                            0x08000a4c   Number         4  code_limpiador_juntas.o(.text._Z15USART3_SendChari)
+    [Anonymous Symbol]                       0x08000a50   Section        0  code_limpiador_juntas.o(.text._Z15paro_emergenciav)
+    __arm_cp.10_0                            0x08000a80   Number         4  code_limpiador_juntas.o(.text._Z15paro_emergenciav)
+    [Anonymous Symbol]                       0x08000a84   Section        0  code_limpiador_juntas.o(.text._Z22move_controlled_servosc)
+    __arm_cp.17_0                            0x08000af0   Number         4  code_limpiador_juntas.o(.text._Z22move_controlled_servosc)
+    __arm_cp.17_1                            0x08000af4   Number         4  code_limpiador_juntas.o(.text._Z22move_controlled_servosc)
+    [Anonymous Symbol]                       0x08000af8   Section        0  code_limpiador_juntas.o(.text._Z9RCC_SETUPv)
+    __arm_cp.2_0                             0x08000b14   Number         4  code_limpiador_juntas.o(.text._Z9RCC_SETUPv)
+    __arm_cp.2_1                             0x08000b18   Number         4  code_limpiador_juntas.o(.text._Z9RCC_SETUPv)
+    [Anonymous Symbol]                       0x08000b1c   Section        0  code_limpiador_juntas.o(.text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE17__deallocate_nodeEPNS_16__hash_node_baseIPNS_11__hash_nodeIS2_PvEEEE)
+    [Anonymous Symbol]                       0x08000b2e   Section        0  code_limpiador_juntas.o(.text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE6rehashEj)
+    [Anonymous Symbol]                       0x08000bcc   Section        0  code_limpiador_juntas.o(.text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE8__rehashEj)
+    [Anonymous Symbol]                       0x08000cd8   Section        0  code_limpiador_juntas.o(.text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEED2Ev)
+    [Anonymous Symbol]                       0x08000cf4   Section        0  hash.cpp.o(.text._ZNSt3__112__next_primeEj)
+    [Anonymous Symbol]                       0x0800123e   Section        0  code_limpiador_juntas.o(.text._ZNSt3__113unordered_mapIciNS_4hashIcEENS_8equal_toIcEENS_9allocatorINS_4pairIKciEEEEED2Ev)
+    [Anonymous Symbol]                       0x08001242   Section        0  code_limpiador_juntas.o(.text._ZNSt3__113unordered_mapIciNS_4hashIcEENS_8equal_toIcEENS_9allocatorINS_4pairIKciEEEEEixEOc)
+    [Anonymous Symbol]                       0x080013a8   Section        0  code_limpiador_juntas.o(.text._ZNSt3__113unordered_mapIciNS_4hashIcEENS_8equal_toIcEENS_9allocatorINS_4pairIKciEEEEEixERS7_)
+    [Anonymous Symbol]                       0x0800150e   Section        0  cxa_handlers.cpp.o(.text._ZSt15get_new_handlerv)
+    [Anonymous Symbol]                       0x0800151a   Section        0  new.cpp.o(.text._ZdlPv)
+    [Anonymous Symbol]                       0x08001520   Section        0  new.cpp.o(.text._Znwj)
+    [Anonymous Symbol]                       0x08001548   Section        0  code_limpiador_juntas.o(.text.main)
+    __arm_cp.1_0                             0x08001608   Number         4  code_limpiador_juntas.o(.text.main)
+    __arm_cp.1_1                             0x0800160c   Number         4  code_limpiador_juntas.o(.text.main)
+    __arm_cp.1_2                             0x08001610   Number         4  code_limpiador_juntas.o(.text.main)
+    __arm_cp.1_3                             0x08001614   Number         4  code_limpiador_juntas.o(.text.main)
+    __arm_cp.1_4                             0x08001618   Number         4  code_limpiador_juntas.o(.text.main)
+    __arm_cp.1_5                             0x0800161c   Number         4  code_limpiador_juntas.o(.text.main)
+    $v0                                      0x08001620   Number         0  fpinit.o(x$fpl$fpinit)
+    x$fpl$fpinit                             0x08001620   Section       26  fpinit.o(x$fpl$fpinit)
+    std::__1::<unnamed namespace 1>::small_primes 0x0800163c   Data         192  hash.cpp.o(.rodata._ZNSt3__112_GLOBAL__N_112small_primesE)
+    std::__1::<unnamed namespace 1>::indices 0x080016fc   Data         192  hash.cpp.o(.rodata._ZNSt3__112_GLOBAL__N_17indicesE)
+    .init_array                              0x080017e0   Section        0  init_aeabi.o(.init_array)
     [Anonymous Symbol]                       0x20020000   Section        0  code_limpiador_juntas.o(.data..L_MergedGlobals)
     .bss                                     0x20020008   Section       96  libspace.o(.bss)
     [Anonymous Symbol]                       0x20020068   Section        0  code_limpiador_juntas.o(.bss..L_MergedGlobals.1)
@@ -1038,33 +1038,33 @@ Image Symbol Table
     TIM_Config()                             0x080008dd   Thumb Code   112  code_limpiador_juntas.o(.text._Z10TIM_Configv)
     Test_Serial()                            0x0800094d   Thumb Code    20  code_limpiador_juntas.o(.text._Z11Test_Serialv)
     USART_SETUP()                            0x08000961   Thumb Code    60  code_limpiador_juntas.o(.text._Z11USART_SETUPv)
-    carro_atras(int)                         0x0800099d   Thumb Code    52  code_limpiador_juntas.o(.text._Z11carro_atrasi)
-    SysTick_Wait(unsigned)                   0x080009d1   Thumb Code    24  code_limpiador_juntas.o(.text._Z12SysTick_Waitj)
-    carro_adelante(int)                      0x080009e9   Thumb Code    56  code_limpiador_juntas.o(.text._Z14carro_adelantei)
-    SysTick_Wait1ms(unsigned)                0x08000a21   Thumb Code    20  code_limpiador_juntas.o(.text._Z15SysTick_Wait1msj)
-    USART3_SendChar(int)                     0x08000a35   Thumb Code    20  code_limpiador_juntas.o(.text._Z15USART3_SendChari)
-    paro_emergencia()                        0x08000a49   Thumb Code    52  code_limpiador_juntas.o(.text._Z15paro_emergenciav)
-    move_controlled_servos(char)             0x08000a7d   Thumb Code   116  code_limpiador_juntas.o(.text._Z22move_controlled_servosc)
-    RCC_SETUP()                              0x08000af1   Thumb Code    36  code_limpiador_juntas.o(.text._Z9RCC_SETUPv)
-    std::__1::__hash_table<std::__1::__hash_value_type<char, int>, std::__1::__unordered_map_hasher<char, std::__1::__hash_value_type<char, int>, std::__1::hash<char>, (bool)1>, std::__1::__unordered_map_equal<char, std::__1::__hash_value_type<char, int>, std::__1::equal_to<char>, (bool)1>, std::__1::allocator<std::__1::__hash_value_type<char, int>>>::__deallocate_node(std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<char, int>, void*>*>*) 0x08000b15   Thumb Code    18  code_limpiador_juntas.o(.text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE17__deallocate_nodeEPNS_16__hash_node_baseIPNS_11__hash_nodeIS2_PvEEEE)
-    std::__1::__hash_table<std::__1::__hash_value_type<char, int>, std::__1::__unordered_map_hasher<char, std::__1::__hash_value_type<char, int>, std::__1::hash<char>, (bool)1>, std::__1::__unordered_map_equal<char, std::__1::__hash_value_type<char, int>, std::__1::equal_to<char>, (bool)1>, std::__1::allocator<std::__1::__hash_value_type<char, int>>>::rehash(unsigned) 0x08000b27   Thumb Code   158  code_limpiador_juntas.o(.text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE6rehashEj)
-    std::__1::__hash_table<std::__1::__hash_value_type<char, int>, std::__1::__unordered_map_hasher<char, std::__1::__hash_value_type<char, int>, std::__1::hash<char>, (bool)1>, std::__1::__unordered_map_equal<char, std::__1::__hash_value_type<char, int>, std::__1::equal_to<char>, (bool)1>, std::__1::allocator<std::__1::__hash_value_type<char, int>>>::__rehash(unsigned) 0x08000bc5   Thumb Code   268  code_limpiador_juntas.o(.text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE8__rehashEj)
-    std::__1::__hash_table<std::__1::__hash_value_type<char, int>, std::__1::__unordered_map_hasher<char, std::__1::__hash_value_type<char, int>, std::__1::hash<char>, (bool)1>, std::__1::__unordered_map_equal<char, std::__1::__hash_value_type<char, int>, std::__1::equal_to<char>, (bool)1>, std::__1::allocator<std::__1::__hash_value_type<char, int>>>::~__hash_table__sub_object() 0x08000cd1   Thumb Code    26  code_limpiador_juntas.o(.text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEED2Ev)
-    std::__1::__next_prime(unsigned)         0x08000ced   Thumb Code  1354  hash.cpp.o(.text._ZNSt3__112__next_primeEj)
-    std::__1::unordered_map<char, int, std::__1::hash<char>, std::__1::equal_to<char>, std::__1::allocator<std::__1::pair<const char, int>>>::~unordered_map__sub_object() 0x08001237   Thumb Code     4  code_limpiador_juntas.o(.text._ZNSt3__113unordered_mapIciNS_4hashIcEENS_8equal_toIcEENS_9allocatorINS_4pairIKciEEEEED2Ev)
-    std::__1::unordered_map<char, int, std::__1::hash<char>, std::__1::equal_to<char>, std::__1::allocator<std::__1::pair<const char, int>>>::operator [](char&&) 0x0800123b   Thumb Code   358  code_limpiador_juntas.o(.text._ZNSt3__113unordered_mapIciNS_4hashIcEENS_8equal_toIcEENS_9allocatorINS_4pairIKciEEEEEixEOc)
-    std::__1::unordered_map<char, int, std::__1::hash<char>, std::__1::equal_to<char>, std::__1::allocator<std::__1::pair<const char, int>>>::operator [](const char&) 0x080013a1   Thumb Code   358  code_limpiador_juntas.o(.text._ZNSt3__113unordered_mapIciNS_4hashIcEENS_8equal_toIcEENS_9allocatorINS_4pairIKciEEEEEixERS7_)
-    std::get_new_handler()                   0x08001507   Thumb Code    12  cxa_handlers.cpp.o(.text._ZSt15get_new_handlerv)
-    operator delete (void*)                  0x08001513   Thumb Code     4  new.cpp.o(.text._ZdlPv)
-    operator new(unsigned)                   0x08001519   Thumb Code    38  new.cpp.o(.text._Znwj)
-    main                                     0x08001541   Thumb Code   216  code_limpiador_juntas.o(.text.main)
-    _fp_init                                 0x08001619   Thumb Code    26  fpinit.o(x$fpl$fpinit)
-    __fplib_config_fpu_vfp                   0x08001631   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __fplib_config_pureend_doubles           0x08001631   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    Region$$Table$$Base                      0x080017b4   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x080017d4   Number         0  anon$$obj.o(Region$$Table)
-    SHT$$INIT_ARRAY$$Base                    0x080017d4   Number         0  code_limpiador_juntas.o(.init_array)
-    SHT$$INIT_ARRAY$$Limit                   0x080017d8   Number         0  init_aeabi.o(.init_array)
+    carro_atras(int)                         0x0800099d   Thumb Code    56  code_limpiador_juntas.o(.text._Z11carro_atrasi)
+    SysTick_Wait(unsigned)                   0x080009d5   Thumb Code    24  code_limpiador_juntas.o(.text._Z12SysTick_Waitj)
+    carro_adelante(int)                      0x080009ed   Thumb Code    60  code_limpiador_juntas.o(.text._Z14carro_adelantei)
+    SysTick_Wait1ms(unsigned)                0x08000a29   Thumb Code    20  code_limpiador_juntas.o(.text._Z15SysTick_Wait1msj)
+    USART3_SendChar(int)                     0x08000a3d   Thumb Code    20  code_limpiador_juntas.o(.text._Z15USART3_SendChari)
+    paro_emergencia()                        0x08000a51   Thumb Code    52  code_limpiador_juntas.o(.text._Z15paro_emergenciav)
+    move_controlled_servos(char)             0x08000a85   Thumb Code   116  code_limpiador_juntas.o(.text._Z22move_controlled_servosc)
+    RCC_SETUP()                              0x08000af9   Thumb Code    36  code_limpiador_juntas.o(.text._Z9RCC_SETUPv)
+    std::__1::__hash_table<std::__1::__hash_value_type<char, int>, std::__1::__unordered_map_hasher<char, std::__1::__hash_value_type<char, int>, std::__1::hash<char>, (bool)1>, std::__1::__unordered_map_equal<char, std::__1::__hash_value_type<char, int>, std::__1::equal_to<char>, (bool)1>, std::__1::allocator<std::__1::__hash_value_type<char, int>>>::__deallocate_node(std::__1::__hash_node_base<std::__1::__hash_node<std::__1::__hash_value_type<char, int>, void*>*>*) 0x08000b1d   Thumb Code    18  code_limpiador_juntas.o(.text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE17__deallocate_nodeEPNS_16__hash_node_baseIPNS_11__hash_nodeIS2_PvEEEE)
+    std::__1::__hash_table<std::__1::__hash_value_type<char, int>, std::__1::__unordered_map_hasher<char, std::__1::__hash_value_type<char, int>, std::__1::hash<char>, (bool)1>, std::__1::__unordered_map_equal<char, std::__1::__hash_value_type<char, int>, std::__1::equal_to<char>, (bool)1>, std::__1::allocator<std::__1::__hash_value_type<char, int>>>::rehash(unsigned) 0x08000b2f   Thumb Code   158  code_limpiador_juntas.o(.text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE6rehashEj)
+    std::__1::__hash_table<std::__1::__hash_value_type<char, int>, std::__1::__unordered_map_hasher<char, std::__1::__hash_value_type<char, int>, std::__1::hash<char>, (bool)1>, std::__1::__unordered_map_equal<char, std::__1::__hash_value_type<char, int>, std::__1::equal_to<char>, (bool)1>, std::__1::allocator<std::__1::__hash_value_type<char, int>>>::__rehash(unsigned) 0x08000bcd   Thumb Code   268  code_limpiador_juntas.o(.text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE8__rehashEj)
+    std::__1::__hash_table<std::__1::__hash_value_type<char, int>, std::__1::__unordered_map_hasher<char, std::__1::__hash_value_type<char, int>, std::__1::hash<char>, (bool)1>, std::__1::__unordered_map_equal<char, std::__1::__hash_value_type<char, int>, std::__1::equal_to<char>, (bool)1>, std::__1::allocator<std::__1::__hash_value_type<char, int>>>::~__hash_table__sub_object() 0x08000cd9   Thumb Code    26  code_limpiador_juntas.o(.text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEED2Ev)
+    std::__1::__next_prime(unsigned)         0x08000cf5   Thumb Code  1354  hash.cpp.o(.text._ZNSt3__112__next_primeEj)
+    std::__1::unordered_map<char, int, std::__1::hash<char>, std::__1::equal_to<char>, std::__1::allocator<std::__1::pair<const char, int>>>::~unordered_map__sub_object() 0x0800123f   Thumb Code     4  code_limpiador_juntas.o(.text._ZNSt3__113unordered_mapIciNS_4hashIcEENS_8equal_toIcEENS_9allocatorINS_4pairIKciEEEEED2Ev)
+    std::__1::unordered_map<char, int, std::__1::hash<char>, std::__1::equal_to<char>, std::__1::allocator<std::__1::pair<const char, int>>>::operator [](char&&) 0x08001243   Thumb Code   358  code_limpiador_juntas.o(.text._ZNSt3__113unordered_mapIciNS_4hashIcEENS_8equal_toIcEENS_9allocatorINS_4pairIKciEEEEEixEOc)
+    std::__1::unordered_map<char, int, std::__1::hash<char>, std::__1::equal_to<char>, std::__1::allocator<std::__1::pair<const char, int>>>::operator [](const char&) 0x080013a9   Thumb Code   358  code_limpiador_juntas.o(.text._ZNSt3__113unordered_mapIciNS_4hashIcEENS_8equal_toIcEENS_9allocatorINS_4pairIKciEEEEEixERS7_)
+    std::get_new_handler()                   0x0800150f   Thumb Code    12  cxa_handlers.cpp.o(.text._ZSt15get_new_handlerv)
+    operator delete (void*)                  0x0800151b   Thumb Code     4  new.cpp.o(.text._ZdlPv)
+    operator new(unsigned)                   0x08001521   Thumb Code    38  new.cpp.o(.text._Znwj)
+    main                                     0x08001549   Thumb Code   216  code_limpiador_juntas.o(.text.main)
+    _fp_init                                 0x08001621   Thumb Code    26  fpinit.o(x$fpl$fpinit)
+    __fplib_config_fpu_vfp                   0x08001639   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __fplib_config_pureend_doubles           0x08001639   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    Region$$Table$$Base                      0x080017bc   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x080017dc   Number         0  anon$$obj.o(Region$$Table)
+    SHT$$INIT_ARRAY$$Base                    0x080017dc   Number         0  code_limpiador_juntas.o(.init_array)
+    SHT$$INIT_ARRAY$$Limit                   0x080017e0   Number         0  init_aeabi.o(.init_array)
     contador_servo1                          0x20020000   Data           4  code_limpiador_juntas.o(.data..L_MergedGlobals)
     contador_servo2                          0x20020004   Data           4  code_limpiador_juntas.o(.data..L_MergedGlobals)
     __libspace_start                         0x20020008   Data          96  libspace.o(.bss)
@@ -1087,9 +1087,9 @@ Memory Map of the image
 
   Image Entry point : 0x080002a9
 
-  Load Region LR_1 (Base: 0x08000000, Size: 0x000017e0, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x08000000, Size: 0x000017e8, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000017d8, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000017e0, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1184,46 +1184,46 @@ Memory Map of the image
     0x080008dc   0x080008dc   0x00000070   Code   RO           12    .text._Z10TIM_Configv  code_limpiador_juntas.o
     0x0800094c   0x0800094c   0x00000014   Code   RO           16    .text._Z11Test_Serialv  code_limpiador_juntas.o
     0x08000960   0x08000960   0x0000003c   Code   RO           10    .text._Z11USART_SETUPv  code_limpiador_juntas.o
-    0x0800099c   0x0800099c   0x00000034   Code   RO           22    .text._Z11carro_atrasi  code_limpiador_juntas.o
-    0x080009d0   0x080009d0   0x00000018   Code   RO           34    .text._Z12SysTick_Waitj  code_limpiador_juntas.o
-    0x080009e8   0x080009e8   0x00000038   Code   RO           20    .text._Z14carro_adelantei  code_limpiador_juntas.o
-    0x08000a20   0x08000a20   0x00000014   Code   RO           24    .text._Z15SysTick_Wait1msj  code_limpiador_juntas.o
-    0x08000a34   0x08000a34   0x00000014   Code   RO           26    .text._Z15USART3_SendChari  code_limpiador_juntas.o
-    0x08000a48   0x08000a48   0x00000034   Code   RO           18    .text._Z15paro_emergenciav  code_limpiador_juntas.o
-    0x08000a7c   0x08000a7c   0x00000074   Code   RO           32    .text._Z22move_controlled_servosc  code_limpiador_juntas.o
-    0x08000af0   0x08000af0   0x00000024   Code   RO            4    .text._Z9RCC_SETUPv  code_limpiador_juntas.o
-    0x08000b14   0x08000b14   0x00000012   Code   RO           66    .text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE17__deallocate_nodeEPNS_16__hash_node_baseIPNS_11__hash_nodeIS2_PvEEEE  code_limpiador_juntas.o
-    0x08000b26   0x08000b26   0x0000009e   Code   RO           68    .text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE6rehashEj  code_limpiador_juntas.o
-    0x08000bc4   0x08000bc4   0x0000010c   Code   RO           70    .text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE8__rehashEj  code_limpiador_juntas.o
-    0x08000cd0   0x08000cd0   0x0000001a   Code   RO           64    .text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEED2Ev  code_limpiador_juntas.o
-    0x08000cea   0x08000cea   0x00000002   PAD
-    0x08000cec   0x08000cec   0x0000054a   Code   RO          116    .text._ZNSt3__112__next_primeEj  libcpp_w.l(hash.cpp.o)
-    0x08001236   0x08001236   0x00000004   Code   RO           58    .text._ZNSt3__113unordered_mapIciNS_4hashIcEENS_8equal_toIcEENS_9allocatorINS_4pairIKciEEEEED2Ev  code_limpiador_juntas.o
-    0x0800123a   0x0800123a   0x00000166   Code   RO           60    .text._ZNSt3__113unordered_mapIciNS_4hashIcEENS_8equal_toIcEENS_9allocatorINS_4pairIKciEEEEEixEOc  code_limpiador_juntas.o
-    0x080013a0   0x080013a0   0x00000166   Code   RO           62    .text._ZNSt3__113unordered_mapIciNS_4hashIcEENS_8equal_toIcEENS_9allocatorINS_4pairIKciEEEEEixERS7_  code_limpiador_juntas.o
-    0x08001506   0x08001506   0x0000000c   Code   RO          311    .text._ZSt15get_new_handlerv  libcppabi_w.l(cxa_handlers.cpp.o)
-    0x08001512   0x08001512   0x00000004   Code   RO          132    .text._ZdlPv        libcpp_w.l(new.cpp.o)
-    0x08001516   0x08001516   0x00000002   PAD
-    0x08001518   0x08001518   0x00000026   Code   RO          124    .text._Znwj         libcpp_w.l(new.cpp.o)
-    0x0800153e   0x0800153e   0x00000002   PAD
-    0x08001540   0x08001540   0x000000d8   Code   RO            2    .text.main          code_limpiador_juntas.o
-    0x08001618   0x08001618   0x0000001a   Code   RO          378    x$fpl$fpinit        fz_wv.l(fpinit.o)
-    0x08001632   0x08001632   0x00000002   PAD
-    0x08001634   0x08001634   0x000000c0   Data   RO          118    .rodata._ZNSt3__112_GLOBAL__N_112small_primesE  libcpp_w.l(hash.cpp.o)
-    0x080016f4   0x080016f4   0x000000c0   Data   RO          119    .rodata._ZNSt3__112_GLOBAL__N_17indicesE  libcpp_w.l(hash.cpp.o)
-    0x080017b4   0x080017b4   0x00000020   Data   RO          489    Region$$Table       anon$$obj.o
-    0x080017d4   0x080017d4   0x00000004   Data   RO           46    .init_array         code_limpiador_juntas.o
-    0x080017d8   0x080017d4   0x00000000   Data   RO          110    .init_array         c_w.l(init_aeabi.o)
+    0x0800099c   0x0800099c   0x00000038   Code   RO           22    .text._Z11carro_atrasi  code_limpiador_juntas.o
+    0x080009d4   0x080009d4   0x00000018   Code   RO           34    .text._Z12SysTick_Waitj  code_limpiador_juntas.o
+    0x080009ec   0x080009ec   0x0000003c   Code   RO           20    .text._Z14carro_adelantei  code_limpiador_juntas.o
+    0x08000a28   0x08000a28   0x00000014   Code   RO           24    .text._Z15SysTick_Wait1msj  code_limpiador_juntas.o
+    0x08000a3c   0x08000a3c   0x00000014   Code   RO           26    .text._Z15USART3_SendChari  code_limpiador_juntas.o
+    0x08000a50   0x08000a50   0x00000034   Code   RO           18    .text._Z15paro_emergenciav  code_limpiador_juntas.o
+    0x08000a84   0x08000a84   0x00000074   Code   RO           32    .text._Z22move_controlled_servosc  code_limpiador_juntas.o
+    0x08000af8   0x08000af8   0x00000024   Code   RO            4    .text._Z9RCC_SETUPv  code_limpiador_juntas.o
+    0x08000b1c   0x08000b1c   0x00000012   Code   RO           66    .text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE17__deallocate_nodeEPNS_16__hash_node_baseIPNS_11__hash_nodeIS2_PvEEEE  code_limpiador_juntas.o
+    0x08000b2e   0x08000b2e   0x0000009e   Code   RO           68    .text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE6rehashEj  code_limpiador_juntas.o
+    0x08000bcc   0x08000bcc   0x0000010c   Code   RO           70    .text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEE8__rehashEj  code_limpiador_juntas.o
+    0x08000cd8   0x08000cd8   0x0000001a   Code   RO           64    .text._ZNSt3__112__hash_tableINS_17__hash_value_typeIciEENS_22__unordered_map_hasherIcS2_NS_4hashIcEELb1EEENS_21__unordered_map_equalIcS2_NS_8equal_toIcEELb1EEENS_9allocatorIS2_EEED2Ev  code_limpiador_juntas.o
+    0x08000cf2   0x08000cf2   0x00000002   PAD
+    0x08000cf4   0x08000cf4   0x0000054a   Code   RO          116    .text._ZNSt3__112__next_primeEj  libcpp_w.l(hash.cpp.o)
+    0x0800123e   0x0800123e   0x00000004   Code   RO           58    .text._ZNSt3__113unordered_mapIciNS_4hashIcEENS_8equal_toIcEENS_9allocatorINS_4pairIKciEEEEED2Ev  code_limpiador_juntas.o
+    0x08001242   0x08001242   0x00000166   Code   RO           60    .text._ZNSt3__113unordered_mapIciNS_4hashIcEENS_8equal_toIcEENS_9allocatorINS_4pairIKciEEEEEixEOc  code_limpiador_juntas.o
+    0x080013a8   0x080013a8   0x00000166   Code   RO           62    .text._ZNSt3__113unordered_mapIciNS_4hashIcEENS_8equal_toIcEENS_9allocatorINS_4pairIKciEEEEEixERS7_  code_limpiador_juntas.o
+    0x0800150e   0x0800150e   0x0000000c   Code   RO          311    .text._ZSt15get_new_handlerv  libcppabi_w.l(cxa_handlers.cpp.o)
+    0x0800151a   0x0800151a   0x00000004   Code   RO          132    .text._ZdlPv        libcpp_w.l(new.cpp.o)
+    0x0800151e   0x0800151e   0x00000002   PAD
+    0x08001520   0x08001520   0x00000026   Code   RO          124    .text._Znwj         libcpp_w.l(new.cpp.o)
+    0x08001546   0x08001546   0x00000002   PAD
+    0x08001548   0x08001548   0x000000d8   Code   RO            2    .text.main          code_limpiador_juntas.o
+    0x08001620   0x08001620   0x0000001a   Code   RO          378    x$fpl$fpinit        fz_wv.l(fpinit.o)
+    0x0800163a   0x0800163a   0x00000002   PAD
+    0x0800163c   0x0800163c   0x000000c0   Data   RO          118    .rodata._ZNSt3__112_GLOBAL__N_112small_primesE  libcpp_w.l(hash.cpp.o)
+    0x080016fc   0x080016fc   0x000000c0   Data   RO          119    .rodata._ZNSt3__112_GLOBAL__N_17indicesE  libcpp_w.l(hash.cpp.o)
+    0x080017bc   0x080017bc   0x00000020   Data   RO          489    Region$$Table       anon$$obj.o
+    0x080017dc   0x080017dc   0x00000004   Data   RO           46    .init_array         code_limpiador_juntas.o
+    0x080017e0   0x080017dc   0x00000000   Data   RO          110    .init_array         c_w.l(init_aeabi.o)
 
 
-    Execution Region ER_RW (Exec base: 0x20020000, Load base: 0x080017d8, Size: 0x00000008, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RW (Exec base: 0x20020000, Load base: 0x080017e0, Size: 0x00000008, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20020000   0x080017d8   0x00000008   Data   RW           48    .data..L_MergedGlobals  code_limpiador_juntas.o
+    0x20020000   0x080017e0   0x00000008   Data   RW           48    .data..L_MergedGlobals  code_limpiador_juntas.o
 
 
-    Execution Region ER_ZI (Exec base: 0x20020008, Load base: 0x080017e0, Size: 0x00000890, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_ZI (Exec base: 0x20020008, Load base: 0x080017e8, Size: 0x00000890, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1232,7 +1232,7 @@ Memory Map of the image
     0x20020090        -       0x00000004   Zero   RW          313    .bss.__cxa_new_handler  libcppabi_w.l(cxa_handlers.cpp.o)
     0x20020094        -       0x00000100   Zero   RW           44    .bss.buffer         code_limpiador_juntas.o
     0x20020194        -       0x00000100   Zero   RW           45    .bss.buffer2        code_limpiador_juntas.o
-    0x20020294   0x080017e0   0x00000004   PAD
+    0x20020294   0x080017e8   0x00000004   PAD
     0x20020298        -       0x00000200   Zero   RW           73    HEAP                startup_stm32f767xx.o
     0x20020498        -       0x00000400   Zero   RW           72    STACK               startup_stm32f767xx.o
 
@@ -1244,12 +1244,12 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-      2550        128          4          8        552     122531   code_limpiador_juntas.o
+      2558        128          4          8        552     122533   code_limpiador_juntas.o
         64         26        504          0       1536        916   startup_stm32f767xx.o
         16          4          0          0          0       3542   system_stm32f7xx.o
 
     ----------------------------------------------------------------------
-      2632        158        540          8       2092     126989   Object Totals
+      2640        158        540          8       2092     126991   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          2          0          0          0          4          0   (incl. Padding)
 
@@ -1326,15 +1326,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      5180        282        924          8       2192     128657   Grand Totals
-      5180        282        924          8       2192     128657   ELF Image Totals
-      5180        282        924          8          0          0   ROM Totals
+      5188        282        924          8       2192     128659   Grand Totals
+      5188        282        924          8       2192     128659   ELF Image Totals
+      5188        282        924          8          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 6104 (   5.96kB)
+    Total RO  Size (Code + RO Data)                 6112 (   5.97kB)
     Total RW  Size (RW Data + ZI Data)              2200 (   2.15kB)
-    Total ROM Size (Code + RO Data + RW Data)       6112 (   5.97kB)
+    Total ROM Size (Code + RO Data + RW Data)       6120 (   5.98kB)
 
 ==============================================================================
 
