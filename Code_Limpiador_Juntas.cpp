@@ -35,7 +35,7 @@ int main(){
     SysTick_Init();	
     USART_SETUP();
     TIM_Config();
-    move_servo(1500,2500);
+    move_servo(1500,1500);
     potePWM['L'] = 5000;
     potePWM['M'] = 12000;
     potePWM['H'] = 20000;
